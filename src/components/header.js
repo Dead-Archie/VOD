@@ -10,6 +10,7 @@ import { withStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import Button from '@material-ui/core/Button';
+import { NavLink } from "react-router-dom";
 
 import Catagory from './Catagory';
 
@@ -85,9 +86,9 @@ class Header extends Component {
             <Typography className={classes.title} variant="h6" color="inherit" noWrap>
               Video On Demand
             </Typography>
-            <Button className={classes.button}><Catagory name="Discovers"/></Button>
-            <Button className={classes.button}><Catagory name="Movie"/></Button>
-            <Button className={classes.button}><Catagory name="Tv Series"/></Button>
+            <NavLink to="/" exact strict><Button className={classes.button}><Catagory name="Discovers"/></Button></NavLink>
+            <NavLink to="/movies" exact strict><Button className={classes.button}><Catagory name="Movie"/></Button></NavLink>
+            <NavLink to="/tv-series" exact strict><Button className={classes.button}><Catagory name="Tv Series"/></Button></NavLink>
             <div className={classes.grow} />
             <div className={classes.search}>
               <div className={classes.searchIcon}>

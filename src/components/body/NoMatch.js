@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-export class Container extends Component {
+
+class NoMatch extends Component {
   render() {
     return (
       <div>
-        Container
+        NoMatch
       </div>
     )
   }
 }
 
-export default Container
+export default NoMatch

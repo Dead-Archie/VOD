@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-export class Container extends Component {
+
+class TvSeries extends Component {
   render() {
     return (
       <div>
-        Container
+        TvSeries
       </div>
     )
   }
 }
 
-export default Container
+export default TvSeries
