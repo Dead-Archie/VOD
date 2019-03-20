@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
+import Header  from './components/header'
+import Container from './components/body/Container';
 import './App.css';
-import PropsTag from './components/props';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <PropsTag name="Niladri"/>
-        <PropsTag name="teja"/>
+        <Header/>
+        <Container/>
       </div>
     );
   }
